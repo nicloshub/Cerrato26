@@ -1,6 +1,6 @@
 # Reporte de Carga - Optimist Timoneles - Regata 2
 **Fecha y Hora de Carga:** 2026-09-12 16:27
-**Imágenes Procesadas:** `media_1789240382887.jpg` (Flota Amarilla) y `media_1789240382799.jpg` (Flota Azul)
+**Imágenes Procesadas:** `IMG/TIMO_R2_AMARILLA.jpg` (Flota Amarilla) y `IMG/TIMO_R2_AZUL.jpg` (Flota Azul)
 **Archivo Actualizado:** `TIMO.blw`
 
 ## 1. Novedades y Discrepancias Detectadas

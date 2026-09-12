@@ -1,6 +1,6 @@
 # Reporte de Carga - ILCA 6 - Regata 1
 **Fecha y Hora de Carga:** 2026-09-12 16:27
-**Imagen Procesada:** `media_1789240382259.jpg`
+**Imagen Procesada:** `IMG/ILCA6_R1.jpg`
 **Archivo Actualizado:** `ILCA6.blw` y `Docs/ILCA 6.csv`
 
 ## 1. Novedades y Discrepancias Detectadas
