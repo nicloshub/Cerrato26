@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/cloos/AppData/Local/Temp/blwB29E.htm -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<title>Sailwave Flight Assignment for XLV G.P.I.V. Luis Alberto Cerrato - Optimist Principiantes at Yacht Club Olivos 2026</title>
+
+<style type="text/css">
+body {font: 80% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0  15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #999 solid;}
+td, th {padding: 4px; border: 1px #999 solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+th {background-color: #ddd;}
+p {text-align: center;}
+.contents {text-align: left; margin-left: 20%;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="./FLOTAS_PRINCI_1209_files/jquery.min.js.descarga"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=EliminarRankTotalNett
+//  dependencies=jQuery
+//  description=Elimina las columnas Rank, Total y Nett de las tablas de resultados y flotas
+//  author=Antigravity
+//  date=2026-09-11
+//  version=1.0
+//  url=http://sailwave.com
+//  comments=Elimina columnas Rank, Total y Nett para publicacion de flotas
+//
+
+(function() {
+    function eliminarColumnas() {
+        var targetNames = ['rank', 'puesto', 'total', 'nett', 'neto'];
+        var targetClasses = ['rank', 'total', 'nett'];
+
+        var tables = document.querySelectorAll('table');
+        if (!tables || tables.length === 0) return;
+
+        tables.forEach(function(table) {
+            var headerRow = table.querySelector('tr');
+            if (!headerRow) return;
+
+            var ths = headerRow.querySelectorAll('th, td');
+            var cols = table.querySelectorAll('colgroup col');
+            var indicesToRemove = [];
+
+            ths.forEach(function(th, index) {
+                var text = th.innerText ? th.innerText.trim().toLowerCase() : '';
+                var isTarget = targetNames.indexOf(text) !== -1;
+
+                // Verificar tambien clase en la etiqueta <col> correspondiente
+                if (!isTarget && cols && cols.length > index) {
+                    var colClass = (cols[index].className || '').toLowerCase();
+                    for (var i = 0; i < targetClasses.length; i++) {
+                        if (colClass.indexOf(targetClasses[i]) !== -1) {
+                            isTarget = true;
+                            break;
+                        }
+                    }
+                }
+
+                // Verificar clase en el propio <th>
+                if (!isTarget) {
+                    var thClass = (th.className || '').toLowerCase();
+                    for (var j = 0; j < targetClasses.length; j++) {
+                        if (thClass.indexOf(targetClasses[j]) !== -1) {
+                            isTarget = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (isTarget) {
+                    indicesToRemove.push(index);
+                }
+            });
+
+            if (indicesToRemove.length === 0) return;
+
+            // Orden descendente para que la eliminacion no desplace los indices anteriores
+            indicesToRemove.sort(function(a, b) {
+                return b - a;
+            });
+
+            // Eliminar los <col> correspondientes y actualizar span del colgroup
+            if (cols && cols.length > 0) {
+                indicesToRemove.forEach(function(idx) {
+                    if (cols[idx] && cols[idx].parentNode) {
+                        cols[idx].parentNode.removeChild(cols[idx]);
+                    }
+                });
+                var colgroup = table.querySelector('colgroup');
+                if (colgroup && colgroup.getAttribute('span')) {
+                    var span = parseInt(colgroup.getAttribute('span'), 10);
+                    if (!isNaN(span)) {
+                        colgroup.setAttribute('span', Math.max(1, span - indicesToRemove.length));
+                    }
+                }
+            }
+
+            // Eliminar las celdas en cada fila (cabecera y datos)
+            var rows = table.querySelectorAll('tr');
+            rows.forEach(function(row) {
+                var cells = row.children;
+                indicesToRemove.forEach(function(idx) {
+                    if (cells[idx]) {
+                        row.removeChild(cells[idx]);
+                    }
+                });
+            });
+        });
+    }
+
+    // Ejecucion segura con jQuery y con Vanilla JS
+    if (typeof jQuery !== 'undefined') {
+        jQuery(document).ready(function() {
+            eliminarColumnas();
+        });
+    } else if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', eliminarColumnas);
+    } else {
+        eliminarColumnas();
+    }
+})();
+</script>
+<link rel="shortcut icon" type="image/ico" href="https://www.sailwave.com/favicon.ico">
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id="wrap">
+
+<div style="clear:both;"></div>
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h1>XLV G.P.I.V. Luis Alberto Cerrato - Optimist Principiantes</h1>
+<h2>Yacht Club Olivos</h2>
+<h3 id="titleStart 11">Flotas para el día 12/09</h3>
+<table cellspacing="0" cellpadding="0" border="0">
+<colgroup span="6">
+
+<col class="flight">
+<col class="nat">
+<col class="sailno">
+<col class="helmname">
+<col class="club">
+<col class="crewnotes">
+
+
+</colgroup>
+<tbody><tr>
+
+<th>Flota</th>
+<th>Pais</th>
+<th>Vela</th>
+<th>Timonel</th>
+<th>Club</th>
+<th>Categoría</th>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>049</td>
+<td>BAZÁN Gerónimo</td>
+<td>CUBA</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>371</td>
+<td>BICOCCA Julieta</td>
+<td>CPNLB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>375</td>
+<td>KUNDIG Agustin</td>
+<td>YCA</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>2640</td>
+<td>CORRAL Pipe</td>
+<td>CRLP</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>2870</td>
+<td>MELÉNDEZ PERUZZI Santiago</td>
+<td>CVB</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3140</td>
+<td>FERNANDEZ Manuel</td>
+<td>YCA</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3286</td>
+<td>IRIARTE LARENAS Joaquín</td>
+<td>CRLP</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3310</td>
+<td>JORDANA Vicente</td>
+<td>YCA</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3350</td>
+<td>HOFER Gaspar</td>
+<td>CRLP</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3475</td>
+<td>CASTIGLIONI Rosario</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3490</td>
+<td>PARRELLA Francisco</td>
+<td>YCCN</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3581</td>
+<td>GASCON DESCHAMPS Nina</td>
+<td>CRLP</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3590</td>
+<td>MERLO CALDERÓN Santiago</td>
+<td>CRLP</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3631</td>
+<td>CAVIGLIA Catalina</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3637</td>
+<td>ARCEMIS Polo</td>
+<td>CRLP</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3658</td>
+<td>MARTÍNEZ POMPILIO Pedro Salvador</td>
+<td>CNV</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3691</td>
+<td>GONZALEZ MONTALVO Bahía</td>
+<td>Club náutico san isidro</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3727</td>
+<td>ELORRIAGA Homero</td>
+<td>CNZ</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3732</td>
+<td>PERUZZI Bautista</td>
+<td>CVB</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3758</td>
+<td>MICELE Candelaria</td>
+<td>Cnsi</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3771</td>
+<td>GARCIA DELATOUR Catalina</td>
+<td>Cuba</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3785</td>
+<td>GRETHER Alexia Sophia</td>
+<td>YCA</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3787</td>
+<td>MARCONE Malena Delfina</td>
+<td>YCA</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3818</td>
+<td>SALGADO CALANDRELLI Facundo</td>
+<td>CNAs</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3820</td>
+<td>RONCHI Benjamin</td>
+<td>CPNLB</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3835</td>
+<td>OLIVER Eva</td>
+<td>CVB</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3842</td>
+<td>ETCHEGOYEN Pedro</td>
+<td>CUBA</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3879</td>
+<td>LIPANI Battista</td>
+<td>CNAs</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3885</td>
+<td>IRIARTE LARENAS Camila</td>
+<td>CRLP</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3932</td>
+<td>DI MASCIO Thiago</td>
+<td>YCO</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3947</td>
+<td>PEREZ BONADONNA Maite</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3990</td>
+<td>JOSA Valentin</td>
+<td>CPNLB</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3992</td>
+<td>VON ECKENBRECHER GOULD Joaquin</td>
+<td>Cpnlb</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3998</td>
+<td>MOLINARI Santiago</td>
+<td>YCCN</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4015</td>
+<td>DAVENIA Santiago</td>
+<td>CVB</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4044</td>
+<td>TOSO Amancio</td>
+<td>CNSI</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4066</td>
+<td>SUAR VOLCO Justina</td>
+<td>CVB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4088</td>
+<td>WOLOJ Emilia</td>
+<td>CVB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4100</td>
+<td>GARCIA LABORDE Fati</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4119</td>
+<td>HENNING Ramiro</td>
+<td>YCA</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4120</td>
+<td>GARCIA Santiago Nicolas</td>
+<td>CNAs</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4199</td>
+<td>JOCHOIAN Santiago</td>
+<td>CNAs</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4230</td>
+<td>ZARDINI Carolina</td>
+<td>YCO</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4273</td>
+<td>FRANCESCA Zardini</td>
+<td>YCO</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4277</td>
+<td>CUEVAS HERMIDA Benicio Isidro</td>
+<td>CNSI</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4361</td>
+<td>SFOGGIA NUÑO Facundo Tomas</td>
+<td>CPNLB</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Amarillo</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4797</td>
+<td>MUL Nina</td>
+<td>CNZ</td>
+<td>F</td>
+
+
+</tr>
+</tbody></table>
+<div class="applicant-break"></div>
+<h1>XLV G.P.I.V. Luis Alberto Cerrato - Optimist Principiantes</h1>
+<h2>Yacht Club Olivos</h2>
+<h3 id="titleStart 21">Flotas para el día 12/09</h3>
+<table cellspacing="0" cellpadding="0" border="0">
+<colgroup span="6">
+
+<col class="flight">
+<col class="nat">
+<col class="sailno">
+<col class="helmname">
+<col class="club">
+<col class="crewnotes">
+
+
+</colgroup>
+<tbody><tr>
+
+<th>Flota</th>
+<th>Pais</th>
+<th>Vela</th>
+<th>Timonel</th>
+<th>Club</th>
+<th>Categoría</th>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>313</td>
+<td>BRUNO Ambar</td>
+<td>CPNLB-CBRIO</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>354</td>
+<td>STABILE Julia</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>2550</td>
+<td>IRIARTE LARENAS Luz</td>
+<td>CRLP</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>2559</td>
+<td>AZULA ZANOU Agustin</td>
+<td>CNZ</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3061</td>
+<td>OUVIÑA Guillermina</td>
+<td>CRLP</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3138</td>
+<td>TEDIN Jerónimo</td>
+<td>CNSI</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3287</td>
+<td>GOITEA Axel</td>
+<td>CPNLB-CBRIO</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3297</td>
+<td>SOLÍS Justina</td>
+<td>CRLP</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3392</td>
+<td>BENITEZ Eva</td>
+<td>CRLP</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3402</td>
+<td>GALVAN Jose Ignacio</td>
+<td>Crlp</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3542</td>
+<td>JENSEN Tania Maitén</td>
+<td>CRLP</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3553</td>
+<td>DUFFARD Renata</td>
+<td>CRLP</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3591</td>
+<td>OUVIÑA Lucía</td>
+<td>CRLP</td>
+<td>F, S12</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3596</td>
+<td>RUIZ STEPANCIC Lucia</td>
+<td>CVB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3640</td>
+<td>CANO RICCIARDI Vera</td>
+<td>CPNLB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3647</td>
+<td>ADEIL PIETRANERA Juan</td>
+<td>YCO</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3705</td>
+<td>LIBERMAN Sofia Julieta</td>
+<td>CNV</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3706</td>
+<td>HITA Francisco</td>
+<td>yca</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3736</td>
+<td>FRERS Clara</td>
+<td>YCA</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3754</td>
+<td>MAESO Félix</td>
+<td>CUBA</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3775</td>
+<td>FOSSATTI Sofia Guillermina</td>
+<td>CVB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3781</td>
+<td>LACCHINI Delfi</td>
+<td>CRLP</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3799</td>
+<td>BRADLEY Rufina</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3817</td>
+<td>ALFONSO GUARDATI Camila</td>
+<td>YCO</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3826</td>
+<td>REYNOSO Sofía Victoria</td>
+<td>CNZ</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3834</td>
+<td>SANTORSOLA Matilda</td>
+<td>CNZ</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3847</td>
+<td>VILLAMIL Pedro</td>
+<td>Cpnlb</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3870</td>
+<td>DOVAL Chloe</td>
+<td>Yca</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3927</td>
+<td>FARBER Julia</td>
+<td>CNAs</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3928</td>
+<td>BADINO Juan Ignacio</td>
+<td>CNZ</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3968</td>
+<td>TORINO Sol</td>
+<td>CVB</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3978</td>
+<td>CHAPARRO FRESCO Francisco Nahuel</td>
+<td>CRLP</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3994</td>
+<td>BICOCCA Franco</td>
+<td>CPNLB</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>3995</td>
+<td>SICARDI Juana</td>
+<td>YCA</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4031</td>
+<td>TASIN Giovanna Isabella</td>
+<td>YCCN</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4039</td>
+<td>CARISSIMI Olivia</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4070</td>
+<td>BERMUDEZ FIORITI Toribio</td>
+<td>CPNLB</td>
+<td></td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4075</td>
+<td>CLAVIJO Felix</td>
+<td>Cnsi</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4101</td>
+<td>DAVENIA Delfina</td>
+<td>CVB</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4109</td>
+<td>HUANAY MEZA Mia Milagros</td>
+<td>Yco</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4172</td>
+<td>LUEG Franz</td>
+<td>CNSI</td>
+<td>S12</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4184</td>
+<td>GARCIA DELATOUR Benjamin</td>
+<td>Cuba</td>
+<td>Interior</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4256</td>
+<td>SUÁREZ VÁZQUEZ Rocío</td>
+<td>YCA</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4262</td>
+<td>SORZANA Juana</td>
+<td>CNSI</td>
+<td>F</td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4283</td>
+<td>DI FEO Bianca</td>
+<td>CPNLB</td>
+<td>F, Interior</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>4291</td>
+<td>SUAR VOLCO Joaquín</td>
+<td>CVB</td>
+<td></td>
+
+
+</tr>
+<tr class="odd">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>7155</td>
+<td>PARADISO Felicitas</td>
+<td>YCCN</td>
+<td>F</td>
+
+
+</tr>
+<tr class="even">
+
+<td>Azul</td>
+<td><img class="natflag" title="ARG" src="./FLOTAS_PRINCI_1209_files/ARG.jpg"></td>
+<td>22445</td>
+<td>NAPOLI FABRICIUS Gianmarco Federico</td>
+<td>YCO</td>
+<td>Interior</td>
+
+
+</tr>
+</tbody></table>
+
+<p class="hardleft"><a href="https:"></a><br><a href="mailto:"></a></p>
+<p class="hardright"><a href="https:"></a><br><a href="mailto:"></a></p>
+<p>Sailwave Scoring Software 2.38.02<br><a href="https://www.sailwave.com/">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+
+
+
+
+</body></html>
