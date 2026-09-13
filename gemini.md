@@ -70,6 +70,13 @@ Para agilizar la carga en flotas masivas, se aplican las siguientes reglas autom
      * No se interrumpe la carga del resto de los competidores válidos.
      * Se solicita confirmación al usuario (puede ser un cambio de vela no declarado o un timonel de último momento).
 
+7. **Barco que corrió en una flota que no le correspondía (Fuera de flota / Wrong Flight):**
+   * En regatas con flotas divididas o clasificatorias (ej. Flota Amarilla y Flota Azul en Optimist o ILCA):
+     * Si un competidor aparece en la planilla de llegada de una flota distinta a la que tenía oficialmente asignada (ejemplo: vela `3578` asignada en Flota Amarilla que cruzó en la Flota Azul):
+       * **NO se le debe asignar puesto:** Queda **sin resultado / sin puesto** en esa llegada.
+       * En su flota asignada original, al no haber llegado con su grupo, queda sin arribo (o con código `DNC`).
+       * **Acción en reporte:** Se registra una alerta destacada en el reporte post-carga (`Docs/reportes/`) explicitando que corrió fuera de flota para decisión de la Comisión de Regatas / Jurado.
+
 ---
 
 ## 4. Estructura Interna del Archivo `.blw` para Inyecciones
