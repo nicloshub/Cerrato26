@@ -1,42 +1,107 @@
-# Reporte de Carga - Optimist Timoneles - Regata 5 (Flota Amarilla)
-**Fecha y Hora de Carga:** 2026-09-13 16:08  
-**Imagen Procesada:** `IMG/TIMO_R5_AMARILLA.jpg` (Flota Amarilla)  
+# Reporte de Carga - Optimist Timoneles - Regata 5 (Ambas Flotas)
+**Fecha y Hora de Carga:** 2026-09-13 16:31  
+**Imágenes Procesadas:**  
+- `IMG/TIMO_R5_AMARILLA.jpg` (Flota Amarilla)  
+- `IMG/TIMO_R5_AZUL.jpeg` (Flota Azul)  
 **Archivo Actualizado:** `TIMO.blw`  
-**Estado:** *Flota Azul pendiente de arribo/planilla*
+**Estado:** *Regata 5 Completa (111 competidores procesados)*
 
 ---
 
 ## 1. Novedades y Discrepancias Detectadas
 
+### Flota Azul:
+* **Llegada Limpia bajo Bandera Negra:**
+  - Partida sin pasados (Partida limpia).
+  - Horario de Partida: 15:10 | Llegada 1er barco: 15:41 | Llegada último barco: 15:49.
+* **Vela no encontrada / En revisión (`3930`):**
+  - Al igual que en las Regatas 3 y 4, la vela **`3930`** cruzó en orden físico 51° sin figurar en el padrón formal de inscriptos. Se emite alerta para confirmación por la Comisión.
+* **Competidores Ausentes (DNC):**
+  - 4 ausentes asignados con **`DNC`** (57 puntos), idéntico grupo que en la Regata 4:
+    - `4048` (BIASI Azul, `compID 35`)
+    - `2972` (BLANCO Simona, `compID 80`)
+    - `3201` (BRAVO Francisco, `compID 122`)
+    - `4025` (DOMINGUEZ Catalina, `compID 123`)
+
+### Flota Amarilla:
 * **Protestas Anotadas al Margen:**
-  - En el ángulo superior derecho se asentaron formalmente dos intenciones de protesta en el agua:
-    - **`4169 protesta 4053`** (**ATANASOPULOS Juan** protesta a **JUAN DE PAZ Ciro**)
-    - **`4047 protesta 4053`** (**MAFFEI Constantino** protesta a **JUAN DE PAZ Ciro**)
+  - `4169 protesta 4053` (**ATANASOPULOS Juan** vs **JUAN DE PAZ Ciro**)
+  - `4047 protesta 4053` (**MAFFEI Constantino** vs **JUAN DE PAZ Ciro**)
 * **Resolución de Manuscrito en Fila 20 (`3070 -> 3771`):**
-  - En la fila 20 consta la anotación inicial `3070` seguida de una flecha hacia `3771`.
-  - Ambos timoneles pertenecen a la Flota Amarilla:
-    - `3070`: **PINEDO CHIAPPA Martiniano** (`compID 75`, CRLP)
-    - `3771`: **LUCERO Martín** (`compID 68`, CUBA)
-  - Se computaron ambos arribos consecutivos (20° y 21°), totalizando 49 llegadas efectivas.
-* **Tiempos de Regata (Flota Amarilla):**
-  - Horario de Partida: 14:50
-  - Llegada 1er barco: 15:22
-  - Llegada último barco: 15:30
-  - Bandera preparatoria: UNIFORM (Partida Limpia)
-* **Competidores Ausentes en Flota Amarilla (DNC):**
-  - 6 ausentes asignados con **`DNC`** (57 puntos), idéntico grupo ausente en la Regata 4:
-    - `3529` (GASCON DESCHAMPS Bruna, `compID 34`)
-    - `4245` (GHERGHI Lara, `compID 42`)
-    - `3887` (LOPEZ ORIOLO Paz, `compID 79`)
-    - `4359` (CICHOWOLSKI Santiago, `compID 95`)
-    - `4211` (BIZZOZERO Tomas, `compID 116`)
-    - `4118` (MONES RUIZ Rafael, `compID 120`)
-* **Flota Azul:**
-  - Queda asignada la flota correspondiente (`rflt: "Azul"`) en `TIMO.blw` a la espera de la planilla respectiva para su posterior inyección y scoring acumulado conjunto.
+  - Anotación de arribo conjunto/consecutivo de **PINEDO CHIAPPA Martiniano** (`3070`, 20°) y **LUCERO Martín** (`3771`, 21°), totalizando 49 llegadas.
+* **Tiempos de Regata:**
+  - Horario de Partida: 14:50 | Llegada 1er barco: 15:22 | Llegada último barco: 15:30.
+  - Bandera preparatoria: UNIFORM (Partida Limpia).
+* **Competidores Ausentes (DNC):**
+  - 6 ausentes asignados con **`DNC`** (57 puntos): `3529`, `4245`, `3887`, `4359`, `4211`, `4118`.
 
 ---
 
-## 2. Orden de Llegada - Flota Amarilla (Regata 5)
+## 2. Orden de Llegada - Flota Azul (Regata 5)
+
+| Puesto | Llegada Física | N° Vela | Timonel | Club | compID | Tipo / Código | Puntos |
+| :---: | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
+| 1° | 1 | 4356 | FUHRMANN Renata | CNAs | 62 | Puesto | 1 |
+| 2° | 2 | 4263 | LACCHINI Fausto | CRLP | 49 | Puesto | 2 |
+| 3° | 3 | 3962 | VIEYTEZ Martin | CUBA | 113 | Puesto | 3 |
+| 4° | 4 | 4188 | PEREIRO Bautista | Cuba | 78 | Puesto | 4 |
+| 5° | 5 | 3743 | BOERI DI GIORGIO Camilo | CPNLB | 100 | Puesto | 5 |
+| 6° | 6 | 4238 | BRUNETTA Olivia | CNSI | 24 | Puesto | 6 |
+| 7° | 7 | 4276 | AMESPIL Marcos | CUBA | 96 | Puesto | 7 |
+| 8° | 8 | 4093 | GUILLE Mateo | CNZ | 66 | Puesto | 8 |
+| 9° | 9 | 4274 | CASTIGLIONI Francisco | CNSI | 98 | Puesto | 9 |
+| 10° | 10 | 4190 | VUGDELIJA Emilia | CUBA | 70 | Puesto | 10 |
+| 11° | 11 | 4029 | ROSSI GALIZZI Augusto | YCA | 20 | Puesto | 11 |
+| 12° | 12 | 4201 | CALABRESE Francisco | YCA | 59 | Puesto | 12 |
+| 13° | 13 | 3749 | LUZURIAGA Lorenzo Agustín | CUBA | 31 | Puesto | 13 |
+| 14° | 14 | 3675 | JAIMOVICH LANDEO Thaya | YCO | 21 | Puesto | 14 |
+| 15° | 15 | 4197 | FOLGUERA Silvio | CPNLB | 85 | Puesto | 15 |
+| 16° | 16 | 4085 | SCHERE PENA Agustina | YCA | 106 | Puesto | 16 |
+| 17° | 17 | 3903 | TRAVERÍA Isabel | CRLP | 46 | Puesto | 17 |
+| 18° | 18 | 4090 | MORENO CANTILLANA Carlota | YCCN | 25 | Puesto | 18 |
+| 19° | 19 | 4215 | REIS DEMARTIN Jean Lucca | CVB | 124 | Puesto | 19 |
+| 20° | 20 | 4067 | IACOVONE Martín | CNZ | 32 | Puesto | 20 |
+| 21° | 21 | 420 | CALABRESE Mora | YCA | 53 | Puesto | 21 |
+| 22° | 22 | 4170 | PASQUALE CORONEL Luca | CNZ | 38 | Puesto | 22 |
+| 23° | 23 | 4144 | FERREYRA Valentina | CNZ | 67 | Puesto | 23 |
+| 24° | 24 | 4224 | MARCONE Andres Benjamin | YCA | 18 | Puesto | 24 |
+| 25° | 25 | 4160 | DELEO Clara | CRLP | 30 | Puesto | 25 |
+| 26° | 26 | 4181 | LÓPEZ BUSTOS Nuria | CUBA | 118 | Puesto | 26 |
+| 27° | 27 | 4106 | ROS MOLINA Milo | CNSE / CNZ | 50 | Puesto | 27 |
+| 28° | 28 | 4268 | CHAVARRIA Valentin | CNZ | 54 | Puesto | 28 |
+| 29° | 29 | 4226 | ARCURI Chiara | YCA | 39 | Puesto | 29 |
+| 30° | 30 | 3833 | MONTAUVAN Martina | C V B | 126 | Puesto | 30 |
+| 31° | 31 | 4249 | VELEZ Agustina | CNZ | 64 | Puesto | 31 |
+| 32° | 32 | 4117 | CARANTI Isabel | CNSI | 111 | Puesto | 32 |
+| 33° | 33 | 3532 | CERVIÑO Agustín Alejandro | CNAs.(Club náutico albatros) | 48 | Puesto | 33 |
+| 34° | 34 | 4111 | PADILLA Ramiro | CNSI | 102 | Puesto | 34 |
+| 35° | 35 | 3817 | ALFONSO GUARDATI Santiago | YCO | 45 | Puesto | 35 |
+| 36° | 36 | 22581 | MUZZIO Ambar | CPNLB | 22 | Puesto | 36 |
+| 37° | 37 | 404 | BIASI Ana Camelia | YCA | 36 | Puesto | 37 |
+| 38° | 38 | 3614 | ARCURI Lucia | Yca | 40 | Puesto | 38 |
+| 39° | 39 | 3123 | NIEVA Romeo | CPNLB-CBRIO | 109 | Puesto | 39 |
+| 40° | 40 | 4296 | COZAR Sofia | Albatros | 93 | Puesto | 40 |
+| 41° | 41 | 3872 | VUGDELIJA Sofía | CUBA | 71 | Puesto | 41 |
+| 42° | 42 | 4183 | ELKAYAM Gael | CNAs | 89 | Puesto | 42 |
+| 43° | 43 | 3513 | BARRERA Joselyn | CPNLB-CBRIO | 112 | Puesto | 43 |
+| 44° | 44 | 3217 | GOTELLI Delfina | CRLP | 104 | Puesto | 44 |
+| 45° | 45 | 2865 | MUL Martin | CNZ | 74 | Puesto | 45 |
+| 46° | 46 | 4164 | PLOU PEÑAFORT Alma | CPNLB | 115 | Puesto | 46 |
+| 47° | 47 | 4061 | VAZQUEZ DEL CAMPO Fermin | CNSI | 41 | Puesto | 47 |
+| 48° | 48 | 3433 | CORRAL Isa | CRLP | 55 | Puesto | 48 |
+| 49° | 49 | 3578 | LOZANO Pilar | CRLP | 81 | Puesto | 49 |
+| 50° | 50 | 3554 | ZARDINI Fernando | YCO | 44 | Puesto | 50 |
+| -- | 51 | 3930 | *[No inscripto / en revisión]* | - | - | Alerta | - |
+| 51° | 52 | 3827 | MERCERAT Bernarda | CRLP | 28 | Puesto | 51 |
+| 52° | 53 | 3924 | TOMMASI Joaquin | CNSI | 99 | Puesto | 52 |
+| DNC | - | 4048 | BIASI Azul | YCA | 35 | DNC (No largó) | 57 |
+| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC (No largó) | 57 |
+| DNC | - | 3201 | BRAVO Francisco | YCA | 122 | DNC (No largó) | 57 |
+| DNC | - | 4025 | DOMINGUEZ Catalina | CRSN | 123 | DNC (No largó) | 57 |
+
+---
+
+## 3. Orden de Llegada - Flota Amarilla (Regata 5)
 
 | Puesto | Llegada Física | N° Vela | Timonel | Club | compID | Tipo / Código | Puntos |
 | :---: | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -89,16 +154,16 @@
 | 47° | 46 | 4028 | KUNDIG Facundo | YCA | 73 | Puesto | 47 |
 | 48° | 47 | 4058 | RUIZ STEPANCIC Catalina | CVB | 127 | Puesto | 48 |
 | 49° | 48 | 4047 | MAFFEI Constantino | CPNLB | 107 | Puesto | 49 |
-| DNC | - | 3529 | GASCON DESCHAMPS Bruna | CRLP | 34 | DNC (No largó) | 57 |
-| DNC | - | 4245 | GHERGHI Lara | YCO | 42 | DNC (No largó) | 57 |
-| DNC | - | 3887 | LOPEZ ORIOLO Paz | CUBA | 79 | DNC (No largó) | 57 |
-| DNC | - | 4359 | CICHOWOLSKI Santiago | CPNLB | 95 | DNC (No largó) | 57 |
-| DNC | - | 4211 | BIZZOZERO Tomas | YCA | 116 | DNC (No largó) | 57 |
-| DNC | - | 4118 | MONES RUIZ Rafael | YCA | 120 | DNC (No largó) | 57 |
+| DNC | - | 3529 | GASCON DESCHAMPS Bruna | CRLP | 34 | DNC | 57 |
+| DNC | - | 4245 | GHERGHI Lara | YCO | 42 | DNC | 57 |
+| DNC | - | 3887 | LOPEZ ORIOLO Paz | CUBA | 79 | DNC | 57 |
+| DNC | - | 4359 | CICHOWOLSKI Santiago | CPNLB | 95 | DNC | 57 |
+| DNC | - | 4211 | BIZZOZERO Tomas | YCA | 116 | DNC | 57 |
+| DNC | - | 4118 | MONES RUIZ Rafael | YCA | 120 | DNC | 57 |
 
 ---
 
-## 3. Instrucciones de Cierre
-1. Al recibir la planilla de la Flota Azul de la Regata 5, se completará la inyección de la regata.
-2. Abrir `TIMO.blw` en Sailwave.
-3. Presionar **Score Series** (`F7`) para el cómputo de la serie general con descartes.
+## 4. Instrucciones de Cierre
+1. Abrir `TIMO.blw` en Sailwave.
+2. Presionar **Score Series** (`F7`) para el cómputo de la serie general acumulada con descarte de la peor regata.
+3. Exportar resultados en PDF / HTML según corresponda.
