@@ -9,6 +9,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 38° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **38°** (38 pts) en `TIMO.blw`.
+
 * **Flota Amarilla:**
   - **Corrección manuscrita y rehabilitación de `3513`:** Fila 103 anotada inicialmente como 3513 fue tachada; se reincorporó en fila 107 con aclaración al pie: `3513 OK rehabilitado` (BARRERA Joselyn, CPNLB-CBRIO).
   - **Resolución de manuscrito fila 13:** Leído y validado como `3989` (BIELER Tizziano Valentino, YCO).
@@ -63,7 +66,7 @@
 | 35° | 35 | 3688 | MASSA GALLI Valentín | CVB | 121 | Puesto | 35 |
 | 36° | 36 | 4183 | ELKAYAM Gael | CNAs | 89 | Puesto | 36 |
 | 37° | 37 | 4164 | PLOU PEÑAFORT Alma | CPNLB | 115 | Puesto | 37 |
-| - | 38 | 3930 | *Vela no inscripta (en revisión)* | - | - | Fantasma | - |
+| 38° | 38 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 38 |
 | 38° | 39 | 3693 | JOSA Santiago | CPNLB | 90 | Puesto | 38 |
 | 39° | 40 | 4047 | MAFFEI Constantino | CPNLB | 107 | Puesto | 39 |
 | 40° | 41 | 4058 | RUIZ STEPANCIC Catalina | CVB | 127 | Puesto | 40 |
@@ -80,7 +83,7 @@
 | 51° | 52 | 3453 | BARRIONUEVO Jeronimo | CRLP | 77 | Puesto | 51 |
 | 52° | 53 | 4226 | ARCURI Chiara | YCA | 39 | Puesto | 52 |
 | 53° | 54 | 2865 | MUL Martin | CNZ | 74 | Puesto | 53 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 4359 | CICHOWOLSKI Santiago | CPNLB | 95 | DNC | 57 |
 
 ---

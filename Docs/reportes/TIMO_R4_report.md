@@ -9,6 +9,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 31° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **28°** (28 pts) en `TIMO.blw`.
+
 ### Flota Azul:
 * **Penalizaciones por Bandera Preparatoria "U" (`UFD`):**
   - En la columna marginal *Pasados / Observaciones* se registraron 3 barcos:
@@ -23,7 +26,7 @@
 * **Tiempos de Regata (Flota Azul):**
   - Partida: 14:05 | Llegada 1er barco: 14:31 | Último barco: 14:37.
 * **Competidores Ausentes (DNC):**
-  - 4 ausentes asignados con **`DNC`** (57 pts): `4048` (BIASI Azul), `2972` (BLANCO Simona), `3201` (BRAVO Francisco), `4025` (DOMINGUEZ Catalina).
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 
 ### Flota Amarilla:
 * **Llegada Limpia:**
@@ -130,7 +133,7 @@
 | 25° | 28 | 4356 | FUHRMANN Renata | CNAs | 62 | Puesto | 25 |
 | 26° | 29 | 420 | CALABRESE Mora | YCA | 53 | Puesto | 26 |
 | 27° | 30 | 4201 | CALABRESE Francisco | YCA | 59 | Puesto | 27 |
-| -- | 31 | 3930 | *[No inscripto / en revisión]* | - | - | Alerta | - |
+| 28° | 31 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 28 |
 | 28° | 32 | 4160 | DELEO Clara | CRLP | 30 | Puesto | 28 |
 | 29° | 33 | 3532 | CERVIÑO Agustín Alejandro | CNAs.(Club náutico albatros) | 48 | Puesto | 29 |
 | 30° | 34 | 4164 | PLOU PEÑAFORT Alma | CPNLB | 115 | Puesto | 30 |
@@ -154,7 +157,7 @@
 | 48° | 52 | 3554 | ZARDINI Fernando | YCO | 44 | Puesto | 48 |
 | 49° | 53 | 3513 | BARRERA Joselyn | CPNLB-CBRIO | 112 | Puesto | 49 |
 | DNC | - | 4048 | BIASI Azul | YCA | 35 | DNC | 57 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 3201 | BRAVO Francisco | YCA | 122 | DNC | 57 |
 | DNC | - | 4025 | DOMINGUEZ Catalina | CRSN | 123 | DNC | 57 |
 

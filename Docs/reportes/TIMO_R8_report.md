@@ -9,6 +9,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 52° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **51°** (51 pts) en `TIMO.blw`.
+
 * **Flota Amarilla:**
   - **Penalización OCS:** En la fila 73 figura marcado con asterisco `4061 *` y nota al pie: `* 4061 PASADO.` $\rightarrow$ Asignado código **`OCS`** (57 pts) a **VAZQUEZ DEL CAMPO Fermin** (compID 41, CNSI). Cruzó en orden físico 13°.
   - **Vela no inscripta / En revisión (`3930`):** Cruzó en orden físico 52° (fila 112). Se omite del cómputo oficial.
@@ -88,10 +91,10 @@
 | 48° | 49 | 3453 | BARRIONUEVO Jeronimo | CRLP | 77 | Puesto | 48 |
 | 49° | 50 | 2865 | MUL Martin | CNZ | 74 | Puesto | 49 |
 | 50° | 51 | 4249 | VELEZ Agustina | CNZ | 64 | Puesto | 50 |
-| - | 52 | 3930 | *Vela no inscripta (en revisión)* | - | - | Fantasma | - |
+| 51° | 52 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 51 |
 | 51° | 53 | 3217 | GOTELLI Delfina | CRLP | 104 | Puesto | 51 |
 | DNC | - | 4076 | OJEDA LOIS Ignacio | YCCN | 23 | DNC | 57 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 4359 | CICHOWOLSKI Santiago | CPNLB | 95 | DNC | 57 |
 
 ---

@@ -9,6 +9,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 34° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **34°** (34 pts) en `TIMO.blw`.
+
 ### Flota Azul:
 * **Vela no encontrada / En revisión (`3930`):**
   - En el puesto 34° de llegada física cruzó la vela **`3930`**.
@@ -89,7 +92,7 @@
 | 31° | 31 | 4085 | SCHERE PENA Agustina | YCA | 106 | Puesto | 31 |
 | 32° | 32 | 4224 | MARCONE Andres Benjamin | YCA | 18 | Puesto | 32 |
 | 33° | 33 | 3924 | TOMMASI Joaquin | CNSI | 99 | Puesto | 33 |
-| -- | 34 | 3930 | *[No inscripto / en revisión]* | - | - | Alerta | - |
+| 34° | 34 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 34 |
 | 34° | 35 | 3675 | JAIMOVICH LANDEO Thaya | YCO | 21 | Puesto | 34 |
 | 35° | 36 | 4164 | PLOU PEÑAFORT Alma | CPNLB | 115 | Puesto | 35 |
 | 36° | 37 | 3903 | TRAVERÍA Isabel | CRLP | 46 | Puesto | 36 |
@@ -110,7 +113,7 @@
 | 51° | 52 | 3433 | CORRAL Isa | CRLP | 55 | Puesto | 51 |
 | 52° | 53 | 3578 | LOZANO Pilar | CRLP | 81 | Puesto | 52 |
 | DNC | - | 4048 | BIASI Azul | YCA | 35 | DNC | 57 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 3201 | BRAVO Francisco | YCA | 122 | DNC | 57 |
 | DNC | - | 4025 | DOMINGUEZ Catalina | CRSN | 123 | DNC | 57 |
 

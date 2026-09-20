@@ -9,6 +9,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 24° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **24°** (24 pts) en `TIMO.blw`.
+
 * **Flota Amarilla:**
   - **Vela no encontrada / En revisión (`3930`):** En puesto físico 24° cruzó la vela `3930` (sin registro oficial en padrón, recurrente desde R3). Se omite en asignación y los barcos posteriores avanzan 1 puesto en cómputo oficial.
   - **Manuscritos al pie:** Anotación `4286` y firma tachadas/anuladas.
@@ -48,7 +51,7 @@
 | 21° | 21 | 3529 | GASCON DESCHAMPS Bruna | CRLP | 34 | Puesto | 21 |
 | 22° | 22 | 4060 | HEREDIA Marcos | YCCN | 91 | Puesto | 22 |
 | 23° | 23 | 4238 | BRUNETTA Olivia | CNSI | 24 | Puesto | 23 |
-| - | 24 | 3930 | *Vela no inscripta (en revisión)* | - | - | Fantasma | - |
+| 24° | 24 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 24 |
 | 24° | 25 | 4226 | ARCURI Chiara | YCA | 39 | Puesto | 24 |
 | 25° | 26 | 4049 | KRENEK Francisco | YCO | 57 | Puesto | 25 |
 | 26° | 27 | 4117 | CARANTI Isabel | CNSI | 111 | Puesto | 26 |
@@ -79,7 +82,7 @@
 | 51° | 52 | 4076 | OJEDA LOIS Ignacio | YCCN | 23 | Puesto | 51 |
 | 52° | 53 | 404 | BIASI Ana Camelia | YCA | 36 | Puesto | 52 |
 | 53° | 54 | 4058 | RUIZ STEPANCIC Catalina | CVB | 127 | Puesto | 53 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 4359 | CICHOWOLSKI Santiago | CPNLB | 95 | DNC | 57 |
 
 ---

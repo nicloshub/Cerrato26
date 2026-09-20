@@ -10,6 +10,9 @@
 
 ## 1. Novedades y Discrepancias Detectadas
 
+> [!NOTE]
+> **Regularización de Vela 3930 / 2972:** La vela manuscrita `3930` que cruzó en orden físico 51° fue confirmada como **BLANCO Simona (CRLP, compID 80)**, quien figuraba en el padrón con vela 2972. Se le asignó oficialmente el puesto **51°** (51 pts) en `TIMO.blw`.
+
 ### Flota Azul:
 * **Llegada Limpia bajo Bandera Negra:**
   - Partida sin pasados (Partida limpia).
@@ -91,11 +94,11 @@
 | 48° | 48 | 3433 | CORRAL Isa | CRLP | 55 | Puesto | 48 |
 | 49° | 49 | 3578 | LOZANO Pilar | CRLP | 81 | Puesto | 49 |
 | 50° | 50 | 3554 | ZARDINI Fernando | YCO | 44 | Puesto | 50 |
-| -- | 51 | 3930 | *[No inscripto / en revisión]* | - | - | Alerta | - |
+| 51° | 51 | 3930 | BLANCO Simona | CRLP | 80 | Puesto (ex 2972) | 51 |
 | 51° | 52 | 3827 | MERCERAT Bernarda | CRLP | 28 | Puesto | 51 |
 | 52° | 53 | 3924 | TOMMASI Joaquin | CNSI | 99 | Puesto | 52 |
 | DNC | - | 4048 | BIASI Azul | YCA | 35 | DNC (No largó) | 57 |
-| DNC | - | 2972 | BLANCO Simona | CRLP | 80 | DNC (No largó) | 57 |
+| *Reasignado* | - | 2972 | BLANCO Simona *(cambio por 3930)* | CRLP | 80 | *Regularizado a 3930* | - |
 | DNC | - | 3201 | BRAVO Francisco | YCA | 122 | DNC (No largó) | 57 |
 | DNC | - | 4025 | DOMINGUEZ Catalina | CRSN | 123 | DNC (No largó) | 57 |
 
