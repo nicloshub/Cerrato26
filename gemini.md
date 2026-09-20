@@ -77,6 +77,11 @@ Para agilizar la carga en flotas masivas, se aplican las siguientes reglas autom
        * En su flota asignada original, al no haber llegado con su grupo, queda sin arribo (o con código `DNC`).
        * **Acción en reporte:** Se registra una alerta destacada en el reporte post-carga (`Docs/reportes/`) explicitando que corrió fuera de flota para decisión de la Comisión de Regatas / Jurado.
 
+8. **Ajuste o Inserción Retrospectiva de Puestos (Desplazamiento Obligatorio):**
+   * Cuando se regulariza, inserta o ajusta el puesto de un barco en una regata previamente computada (por ejemplo, al resolver un cambio de vela no declarado como la 3930, o una reapertura / decisión de protesta):
+     * **Es OBLIGATORIO desplazar (+1) los puestos y puntos (`rpts`, `rpos`) de TODOS los barcos que hayan llegado después de él en esa misma flota.**
+     * **Motivo técnico Sailwave:** Si no se desplazan explícitamente los barcos posteriores en el archivo `.blw`, Sailwave detecta puestos duplicados en la misma flota y arroja error de cómputo / consistencia.
+
 ---
 
 ## 4. Estructura Interna del Archivo `.blw` para Inyecciones
